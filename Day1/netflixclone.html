@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamFlix</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-left">
+            <div class="logo">STREAMFLIX</div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Series</a></li>
+                <li><a href="#">Films</a></li>
+                <li><a href="#">New &amp; Popular</a></li>
+                <li><a href="#">My List</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <button class="icon-btn" title="Search">🔍</button>
+            <button class="icon-btn" title="Notifications">🔔</button>
+            <div class="avatar"></div>
+        </div>
+    </nav>
+    <header class="hero">
+        <div class="hero-glow"></div>
+        <div class="hero-content">
+            <div class="hero-badge">◆ StreamFlix Original</div>
+            <h1 class="hero-title">NIGHTFALL<br>PROTOCOL</h1>
+            <div class="hero-meta">
+                <span class="match">98% Match</span>
+                <span>2026</span>
+                <span class="tag">16+</span>
+                <span>3 Seasons</span>
+                <span class="tag">HD</span>
+            </div>
+            <p class="hero-desc">When a dormant satellite network reactivates over a blacked-out city, a disbanded team
+                of engineers has one night to figure out who woke it up — and why it's counting down.</p>
+            <div class="hero-actions">
+                <button class="btn btn-play" onclick="openModal(0)">▶ Play</button>
+                <button class="btn btn-info" onclick="openModal(0)">ⓘ More Info</button>
+            </div>
+        </div>
+    </header>
+    <main class="rows" id="rows"></main>
+
+    <div class="modal-overlay" id="modalOverlay" onclick="if(event.target===this) closeModal()">
+        <div class="modal" id="modalBox"></div>
+    </div>
+
+    <footer>
+        <div>Questions? Call your imaginary support line.</div>
+        <div class="cols">
+            <div><a href="#">FAQ</a><a href="#">Help Centre</a><a href="#">Account</a></div>
+            <div><a href="#">Media Centre</a><a href="#">Investor Relations</a><a href="#">Jobs</a></div>
+            <div><a href="#">Ways to Watch</a><a href="#">Terms of Use</a><a href="#">Privacy</a></div>
+            <div><a href="#">Cookie Preferences</a><a href="#">Contact Us</a><a href="#">Speed Test</a></div>
+        </div>
+        <div>This is a fictional demo UI — not affiliated with any streaming service.</div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
