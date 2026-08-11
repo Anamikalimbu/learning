@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game">
+
+        <div class="icon">🎯</div>
+
+        <h1>Guess The Number</h1>
+
+        <p class="subtitle">
+            I'm thinking of a number between 1 and 100
+        </p>
+
+        <input
+            type="number"
+            id="guess"
+            placeholder="Enter your guess"
+        >
+
+        <button onclick="checkGuess()">
+            GUESS 🎯
+        </button>
+
+        <div id="message"></div>
+
+        <div class="info">
+            Attempts: <span id="attempts">0</span>
+        </div>
+
+        <button id="restart" onclick="restartGame()">
+            PLAY AGAIN 🔄
+        </button>
+
+    </div>
+
+    <script>
+
+        let secretNumber = Math.floor(Math.random() * 100) + 1;
+
+        let attempts = 0;
+
+        function checkGuess() {
+
+            const guessInput = document.getElementById("guess");
+            const message = document.getElementById("message");
+            const attemptsText = document.getElementById("attempts");
+
+            const guess = Number(guessInput.value);
+
+            if (guess < 1 || guess > 100) {
+
+                message.innerHTML =
+                    "⚠️ Enter a number between 1 and 100!";
+
+                return;
+            }
+
+            attempts++;
+
+            attemptsText.textContent = attempts;
+
+            if (guess === secretNumber) {
+
+                message.innerHTML =
+                    `🎉 Correct! The number was ${secretNumber}!`;
+
+                document.getElementById("restart").style.display =
+                    "block";
+
+                guessInput.disabled = true;
+
+            } else if (guess < secretNumber) {
+
+                message.innerHTML =
+                    "📈 Too low! Try a higher number.";
+
+            } else {
+
+                message.innerHTML =
+                    "📉 Too high! Try a lower number.";
+
+            }
+
+            guessInput.value = "";
+            guessInput.focus();
+        }
+
+
+        function restartGame() {
+
+            secretNumber =
+                Math.floor(Math.random() * 100) + 1;
+
+            attempts = 0;
+
+            document.getElementById("attempts").textContent = 0;
+
+            document.getElementById("message").innerHTML =
+                "";
+
+            document.getElementById("guess").disabled =
+                false;
+
+            document.getElementById("restart").style.display =
+                "none";
+
+            document.getElementById("guess").focus();
+        }
+
+    </script>
+
+</body>
+</html>
+
