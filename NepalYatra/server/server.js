@@ -28,6 +28,7 @@ const userRoutes = require('./routes/userRoutes');
 const { reviewRouter } = require('./routes/reviewRoutes');
 const tourRoutes = require('./routes/tourRoutes');
 const bookingRoutes = require('./routes/bookingRoutes');
+const hotelRoutes = require('./routes/hotelRoutes');
 
 // Mount routers
 app.use('/api/auth', authRoutes);
@@ -36,6 +37,7 @@ app.use('/api/users', userRoutes);
 app.use('/api/reviews', reviewRouter);
 app.use('/api/tours', tourRoutes);
 app.use('/api/bookings', bookingRoutes);
+app.use('/api/hotels', hotelRoutes);
 
 // Basic error handler
 app.use((err, req, res, next) => {
