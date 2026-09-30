@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>
+        Home - Pretech Clone
+    </title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar-header" id="navbarHeader">
+        <div class="navbar">
+            <a class="navbar-logo" href="index.html">
+                <div class="logo-text">
+                    pretech
+                    <span class="logo-e-dot">
+                    </span>
+                </div>
+                <div class="logo-tagline">
+                    SMART DEVICE SOLUTIONS
+                </div>
+            </a>
+            <button aria-expanded="false" class="navbar-toggle" id="navbarToggle">
+                <span class="hamburger-line">
+                </span>
+                <span class="hamburger-line">
+                </span>
+                <span class="hamburger-line">
+                </span>
+            </button>
+            <div class="navbar-collapse" id="navbarCollapse">
+                <div class="navbar-center">
+                    <ul class="navbar-links">
+                        <li>
+                            <a class="nav-link" href="index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="solutions.html">
+                                Solutions
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="solutions.html">All Solutions</a></li>
+                                <li><a href="#">Interactive IoT Solutions</a></li>
+                                <li><a href="#">POS Solutions</a></li>
+                                <li><a href="#">Car Infotainment Solutions</a></li>
+                                <li><a href="#">Smart Education</a></li>
+                                <li><a href="#">Healthcare Solutions</a></li>
+                                <li><a href="#">HMI Solutions</a></li>
+                                <li><a href="#">Multimedia Player</a></li>
+                                <li><a href="#">Enterprise Solutions</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">
+                                OEM Products
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">
+                                Support
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="About-Us.html">
+                                About Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-right">
+                    <div class="search-container flex gap-8px margin-right-16px">
+                        <input class="padding-6px12px border-radius-4px border-1pxsolidccc" id="padding-6px12px border-radius-4px border-1pxsolidccc" placeholder="Search..." type="text">
+                        <button class="padding-6px12px border-radius-4px background-333 text-white border-none cursor-pointer" id="padding-6px12px border-radius-4px background-333 text-white border-none cursor-pointer">
+                            Go
+                        </button>
+                    </div>
+                    <a class="contact-btn" href="Contact-Us.html">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="os-badges">
+                        <span class="badge badge-android">
+                            Android
+                            <svg fill="currentColor" height="14" viewbox="0 0 24 24" width="14" style="margin-left:2px">
+                                <path
+                                    d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.5511 0 .9993.4482.9993.9993s-.4482.9997-.9993.9997m-11.046 0c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.5511 0 .9993.4482.9993.9993s-.4482.9997-.9993.9997m11.4045-6.02l1.9973-3.4592c.1158-.201.0467-.4582-.1544-.574-.2011-.1158-.4582-.0468-.574.1543l-2.0163 3.492c-1.464-.6698-3.1368-1.045-4.9341-1.045-1.7973 0-3.47.3752-4.934 1.045l-2.0164-3.492c-.1158-.201-.3729-.2701-.574-.1543-.201.1158-.2701.373-.1543.574l1.9972 3.459c-3.1818 1.748-5.3343 5.016-5.5186 8.777h22.4002c-.1843-3.761-2.3368-7.029-5.5186-8.777">
+                                </path>
+                            </svg>
+                        </span>
+                        <span class="badge badge-windows">
+                            Windows
+                            <svg fill="currentColor" height="14" viewbox="0 0 24 24" width="14" style="margin-left:2px">
+                                <path
+                                    d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.951-1.801">
+                                </path>
+                            </svg>
+                        </span>
+                        <span class="badge badge-linux">
+                            Linux <span style="margin-left:2px">🐧</span>
+                        </span>
+                    </div>
+                    <h2 class="hero-subtitle">TurnkeySolution Provider</h2>
+                    <h1 class="hero-title">AIOT SMART DISPLAY</h1>
+                </div>
+                
+                <div class="hero-grid">
+                    <div class="grid-card card-orange">
+                        <h3>Smart<br>POS</h3>
+                    </div>
+                    <div class="grid-card card-dark">
+                        <h3>Open Frame<br>Embedded</h3>
+                    </div>
+                    <div class="grid-card card-green-tall">
+                        <h3>Smart<br>IoT</h3>
+                        <div class="bg-text">IoT</div>
+                        <div class="device-mockup">
+                            <div class="device-screen" style="font-size: 16px;">
+                                15:56<span style="font-size: 6px;">May. Monday 31. 2024</span>
+                                <div style="display:flex; justify-content:space-around; font-size:4px; margin-top:10px; color:#333; font-weight:bold;">
+                                    <span>💡 Lights</span><span>📶 Wi-Fi</span><span>📺 TV</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-card card-blue">
+                        <h3>Smart<br>Education</h3>
+                    </div>
+                    <div class="grid-card card-light-green">
+                        <h3>Smart<br>Healthcare</h3>
+                        <div class="bg-text" style="color: rgba(255,255,255,0.4)">H</div>
+                    </div>
+                    <div class="grid-card card-purple">
+                        <h3>Car<br>Infotainment</h3>
+                        <div class="bg-text" style="color: rgba(255,255,255,0.4)">C</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ODM Solution Section -->
+        <section class="odm-section">
+            <div class="odm-container">
+                <!-- Left: Title + Description -->
+                <div class="odm-content">
+                    <h2 class="odm-title">
+                        All-in-one<br>
+                        ODM Smart Devices Solution
+                    </h2>
+                    <p class="odm-description">
+                        Our goal for every ODM engagement is not to merely meet your request, but to reduce your design
+                        time, lower design cost, and minimise design risk. We empower you to make your smart device on
+                        your own terms without compromise.
+                    </p>
+                </div>
+
+                <!-- Right: Feature Icon List -->
+                <div class="odm-features">
+                    <div class="odm-feature-item">
+                        <div class="odm-icon-box">
+                            <svg fill="currentColor" height="26" viewBox="0 0 24 24" width="26">
+                                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
+                                <path d="M19.5 9.5L18 8l1.5-1.5L21 8l-1.5 1.5zm-3-3.5L15 4.5 16.5 3 18 4.5 16.5 6z"></path>
+                            </svg>
+                        </div>
+                        <span class="odm-feature-label">Strong R&amp;D</span>
+                    </div>
+                    <div class="odm-feature-item">
+                        <div class="odm-icon-box">
+                            <svg fill="currentColor" height="26" viewBox="0 0 24 24" width="26">
+                                <path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18-.21 0-.41-.06-.57-.18l-7.9-4.44A.991.991 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18.21 0 .41.06.57.18l7.9 4.44c.32.17.53.5.53.88v9zM12 4.15 6.04 7.5 12 10.85l5.96-3.35L12 4.15zm-.5 15.65 5.5-3.09V10.15L11.5 13.5v6.3zM5 16.71l5.5 3.09V13.5L5 10.15v6.56z"></path>
+                            </svg>
+                        </div>
+                        <span class="odm-feature-label">Turnkey Solution</span>
+                    </div>
+                    <div class="odm-feature-item">
+                        <div class="odm-icon-box">
+                            <svg fill="currentColor" height="26" viewBox="0 0 24 24" width="26">
+                                <path d="M20 7h-2V5c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2zM8 5h8v2H8V5zm12 14H4V9h16v10z"></path>
+                                <rect height="4" width="3" x="6" y="11"></rect>
+                                <rect height="4" width="2" x="11" y="11"></rect>
+                                <rect height="4" width="3" x="15" y="11"></rect>
+                            </svg>
+                        </div>
+                        <span class="odm-feature-label">Trustable Quality</span>
+                    </div>
+                    <div class="odm-feature-item">
+                        <div class="odm-icon-box">
+                            <svg fill="currentColor" height="26" viewBox="0 0 24 24" width="26">
+                                <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"></path>
+                            </svg>
+                        </div>
+                        <span class="odm-feature-label">Rich Experience</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Solutions Section -->
+        <section class="section-padding section-dark text-center">
+            <h2 class="section-title text-4xl mb-16 mb-16">
+                Our Solutions
+            </h2>
+            <p class="text-gray-400 line-height-16 text-md mb-10-2">
+                Comprehensive
+                smart panel solutions designed to integrate perfectly into your specific industry.
+            </p>
+            <div class="solutions-grid">
+                <div class="product-card text-left">
+                    <div class="icon-box mb-20 text-xl">
+                        🌐
+                    </div>
+                    <h3 class="text-md mb-10 mb-10 color-1a1a1a">
+                        Interactive IoT Solutions
+                    </h3>
+                    <p class="text-gray-400 line-height-16 text-sm mt-10">
+                        Smart home hubs and PoE
+                        wall-mounted tablets for modern automation.
+                    </p>
+                </div>
+                <div class="product-card text-left-1">
+                    <div class="icon-box mb-20 text-xl-1">
+                        💳
+                    </div>
+                    <h3 class="text-md mb-10 mb-10 color-1a1a1a-1">
+                        POS Solutions
+                    </h3>
+                    <p class="text-gray-400 line-height-16 text-sm mt-10">
+                        Reliable Point-of-Sale systems
+                        ranging from 4-inch to 12-inch displays.
+                    </p>
+                </div>
+                <div class="product-card text-left-2">
+                    <div class="icon-box mb-20 text-md mb-10 color-2b2b2b">
+                        🚗
+                    </div>
+                    <h3 class="text-md mb-10 mb-10 color-1a1a1a-2">
+                        Car Infotainment
+                    </h3>
+                    <p class="text-gray-400 line-height-16 text-sm mt-10">
+                        In-vehicle smart screens
+                        offering navigation and entertainment features.
+                    </p>
+                </div>
+                <div class="product-card text-left-3">
+                    <div class="icon-box mb-20 text-md mb-10 mb-10 color-1a1a1a">
+                        🎓
+                    </div>
+                    <h3 class="text-md mb-10 mb-10 color-1a1a1a-3">
+                        Smart Education
+                    </h3>
+                    <p class="text-gray-400 line-height-16 text-sm mt-10">
+                        Durable tablets for students
+                        and interactive displays for classrooms.
+                    </p>
+                </div>
+                <div class="product-card text-left-4">
+                    <div class="icon-box mb-20 text-xl-4">
+                        ⚕️
+                    </div>
+                    <h3 class="text-md mb-10 mb-10 color-1a1a1a-4">
+                        Healthcare Solutions
+                    </h3>
+                    <p class="text-gray-400 line-height-16 text-sm mt-10">
+                        Medical-grade tablets and
+                        patient monitoring touch panels.
+                    </p>
+                </div>
+                <div class="product-card text-left-5">
+                    <div class="icon-box mb-20 text-xl-5">
+                        🎛️
+                    </div>
+                    <h3 class="text-md mb-10 mb-10 color-1a1a1a-5">
+                        HMI Solutions
+                    </h3>
+                    <p class="text-gray-400 line-height-16 text-sm mt-10">
+                        Human-Machine Interface
+                        screens for industrial control and machinery.
+                    </p>
+                </div>
+                <div class="product-card text-left-6">
+                    <div class="icon-box mb-20 text-xl-6">
+                        ▶️
+                    </div>
+                    <h3 class="text-md mb-10 mb-10 color-1a1a1a-6">
+                        Multimedia Player
+                    </h3>
+                    <p class="text-gray-400 line-height-16 text-sm mt-10">
+                        Digital signage and
+                        advertising display panels for public spaces.
+                    </p>
+                </div>
+                <div class="product-card text-left-7">
+                    <div class="icon-box mb-20 text-xl-7">
+                        🏢
+                    </div>
+                    <h3 class="text-md mb-10 mb-10 color-1a1a1a-7">
+                        Enterprise Solutions
+                    </h3>
+                    <p class="text-gray-400 line-height-16 text-sm mt-10">
+                        Custom devices designed for
+                        logistics, warehousing, and workforce management.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ODM Service Section -->
+        <section class="section-padding section-dark text-center" style="background-color: #000;">
+            <h2 class="section-title text-4xl" style="margin-bottom: 16px; text-transform: none;">
+                ODM Service
+            </h2>
+            <p style="color: #e5e5e5; font-size: 16px; margin-bottom: 40px; font-weight: 400;">
+                We are able to offer highly specific solutions which can't be satisfied by existing devices on the market.
+            </p>
+            <div class="odm-service-grid">
+                <div class="odm-service-card">
+                    <h4>Tooling Customization</h4>
+                    <div class="odm-service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 12L2 9l4-6z"/><path d="M2 9h20"/><path d="M12 21V9"/><path d="M6 3l6 6"/><path d="M18 3l-6 6"/></svg>
+                    </div>
+                    <ul>
+                        <li>ID Design</li>
+                        <li>MD Design</li>
+                    </ul>
+                </div>
+                <div class="odm-service-card">
+                    <h4>Hardware Customization</h4>
+                    <div class="odm-service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+                    </div>
+                    <ul>
+                        <li>Pcba Principle Design</li>
+                        <li>Pcb Layout</li>
+                        <li>Pcba Debugging</li>
+                        <li>Proofing and Debugging of External Equipment</li>
+                    </ul>
+                </div>
+                <div class="odm-service-card">
+                    <h4>Software Customization</h4>
+                    <div class="odm-service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 9V3"/><path d="M16 9V3"/><path d="M18 9v4a2 2 0 0 1-2 2h-8a2 2 0 0 1-2-2V9Z"/><path d="M12 15v6"/></svg>
+                    </div>
+                    <ul>
+                        <li>Drive Debugging</li>
+                        <li>Customization</li>
+                        <li>Debug Pre Installed Applications</li>
+                    </ul>
+                </div>
+                <div class="odm-service-card">
+                    <h4>Accessories Customization</h4>
+                    <div class="odm-service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="4" height="16" rx="0.5"/><path d="M10 6h-2"/><path d="M10 10h-2"/><path d="M10 14h-2"/><path d="M10 18h-2"/><path d="M15 4h4v12l-2 4-2-4V4z"/><path d="M15 7h4"/><path d="M17 16v4"/></svg>
+                    </div>
+                    <ul>
+                        <li>Smart Cover</li>
+                        <li>Docking Station</li>
+                        <li>Base</li>
+                        <li>Charging Bracket</li>
+                        <li>Magnetic Suction Back Clip</li>
+                        <li>Wall Mount</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive IoT Section -->
+        <section class="interactive-iot-section">
+            <!-- Left Side with image background -->
+            <div class="interactive-iot-left">
+                <div class="interactive-iot-content">
+                    <h2>Interactive IoT<br>Tablets</h2>
+                    <ul class="iot-features-list">
+                        <li>PoE Wall-mount Tablet</li>
+                        <li>Wall-mount Gateway Tablet</li>
+                        <li>Cellular Smart Gateway Hub</li>
+                        <li>Docked Smart Home Control Tablet</li>
+                        <li>Wall-mount Door Control Tablet</li>
+                    </ul>
+                    <div class="iot-buttons">
+                        <a href="#" class="btn-red" style="padding: 12px 30px; border-radius: 4px;">Learn more</a>
+                        <a href="#" class="btn-outline-red">Explore</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Side with white background and tablet mockup -->
+            <div class="interactive-iot-right">
+                <div class="iot-tablet-mockup">
+                    <div class="iot-tablet-screen">
+                        <div class="iot-tablet-time">15:56</div>
+                        <div class="iot-tablet-date">May. Monday 31. 2024<br><span style="font-size: 10px; opacity: 0.8; font-weight: 400;">Shenzhen 19°C | 25°C</span></div>
+                        <div class="iot-tablet-toggles">
+                            <div class="iot-toggle"><span>💡 Lights</span> <span class="toggle-switch active"></span></div>
+                            <div class="iot-toggle"><span>📶 Wi-Fi</span> <span class="toggle-switch active"></span></div>
+                            <div class="iot-toggle"><span>📺 TV</span> <span class="toggle-switch active"></span></div>
+                            <div class="iot-toggle"><span>🗝️ Doors</span> <span class="toggle-switch"></span></div>
+                            <div class="iot-toggle"><span>🪟 Window</span> <span class="toggle-switch"></span></div>
+                            <div class="iot-toggle"><span>📹 CCTV</span> <span class="toggle-switch"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- OEM Products Section -->
+        <section class="section-padding section-light text-center">
+            <h2 class="section-title text-4xl mb-16">
+                OEM Products
+            </h2>
+            <p class="text-gray-600 line-height-16 text-md mb-10-2">
+                Ready-made and
+                customizable consumer electronics for your brand.
+            </p>
+            <div class="oem-grid">
+                <div class="oem-card">
+                    <div class="oem-card-img">
+                        <img alt="Android Tablet" src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=500&q=80">
+                    </div>
+                    <h3 class="oem-card-title">Android Tablets</h3>
+                </div>
+                <div class="oem-card">
+                    <div class="oem-card-img">
+                        <img alt="Smartphone" src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500&q=80">
+                    </div>
+                    <h3 class="oem-card-title">Smartphones</h3>
+                </div>
+                <div class="oem-card">
+                    <div class="oem-card-img">
+                        <img alt="Windows Tablet" src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=500&q=80">
+                    </div>
+                    <h3 class="oem-card-title">Windows Tablets (2-in-1)</h3>
+                </div>
+                <div class="oem-card">
+                    <div class="oem-card-img">
+                        <img alt="Stylus Pen" src="https://infotechsnepal.com.np/wp-content/uploads/2025/11/universal-stylus-pen-in-nepal-1024x1024.jpeg">
+                    </div>
+                    <h3 class="oem-card-title">Stylus Pens</h3>
+                </div>
+            </div>
+        </section>
+        <!-- Why Choose Us -->
+        <section class="why-section">
+            <div class="why-container">
+                <!-- Left: Title + Feature List -->
+                <div class="why-content">
+                    <h2 class="why-title">Why Choose Us</h2>
+                    <p class="why-desc">
+                        We bring over a decade of expertise in hardware manufacturing,
+                        software optimization, and global supply chain management.
+                    </p>
+                    <ul class="why-list">
+                        <li class="why-list-item">
+                            <span class="why-check">✓</span>
+                            Deep Hardware &amp; Software Customization
+                        </li>
+                        <li class="why-list-item">
+                            <span class="why-check">✓</span>
+                            ISO 9001 Certified Factory
+                        </li>
+                        <li class="why-list-item">
+                            <span class="why-check">✓</span>
+                            Comprehensive Testing (High/Low Temp, Drop Test)
+                        </li>
+                        <li class="why-list-item">
+                            <span class="why-check">✓</span>
+                            Timely Delivery &amp; Global Logistics Support
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Right: Stats Grid -->
+                <div class="why-stats">
+                    <div class="why-stat-card">
+                        <span class="why-stat-number">10+</span>
+                        <span class="why-stat-label">Years Experience</span>
+                    </div>
+                    <div class="why-stat-card">
+                        <span class="why-stat-number">50+</span>
+                        <span class="why-stat-label">Countries Served</span>
+                    </div>
+                    <div class="why-stat-card">
+                        <span class="why-stat-number">1M+</span>
+                        <span class="why-stat-label">Devices Shipped</span>
+                    </div>
+                    <div class="why-stat-card">
+                        <span class="why-stat-number">24/7</span>
+                        <span class="why-stat-label">Technical Support</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- NFC SoftPOS Section -->
+        <section class="nfc-softpos-section">
+            <div class="nfc-softpos-container">
+                <div class="nfc-softpos-content">
+                    <h2>NFC SoftPOS<br>Solutions</h2>
+                    <p>Pretech ODM NFC smart devices solutions deliver versatile applications for softPOS, access control, e-ticketing, information interaction,and sport and events. They enhance efficiency, security, and user experience across industries.</p>
+                    <div class="nfc-buttons">
+                        <a href="#" class="btn-red" style="padding: 12px 30px; border-radius: 4px;">Learn more</a>
+                        <a href="#" class="btn-outline-red">Explore</a>
+                    </div>
+                </div>
+                
+                <div class="nfc-softpos-visual">
+                    <div class="nfc-tablet-stand">
+                        <div class="nfc-tablet-mock">
+                            <div class="nfc-tablet-screen">
+                                <div class="tap-to-pay-text">Tap to Pay</div>
+                                <div class="nfc-icon-wrapper">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M7 15a4.5 4.5 0 0 1 0-6"/><path d="M10.5 13.5a2.5 2.5 0 0 1 0-3"/><path d="M14 12v.01"/></svg>
+                                </div>
+                                <div class="price-text">$249</div>
+                            </div>
+                            <div class="nfc-badge">NFC</div>
+                        </div>
+                        <div class="stand-base"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <!-- Column 1: Brand & Contact -->
+                <div class="footer-col brand-col">
+                    <div class="footer-logo">
+                        pretech<span class="logo-dot">.</span>
+                    </div>
+                    <p class="footer-desc">
+                        Leading OEM/ODM manufacturer of customizable smart tablet and panel solutions for global industries.
+                    </p>
+                    <div class="footer-contact">
+                        <p>📧 support@pretech-e.com</p>
+                        <p>📱 WhatsApp: +86 131 2955 8030</p>
+                    </div>
+                </div>
+
+                <!-- Column 2: Solutions -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Solutions</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Interactive IoT Solutions</a></li>
+                        <li><a href="#">POS Solutions</a></li>
+                        <li><a href="#">Car Infotainment</a></li>
+                        <li><a href="#">Smart Education</a></li>
+                        <li><a href="#">Healthcare Solutions</a></li>
+                        <li><a href="#">HMI Solutions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Company -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="About-Us.html">About Pretech</a></li>
+                        <li><a href="#">Why Choose Us</a></li>
+                        <li><a href="#">Our Factory</a></li>
+                        <li><a href="#">Newsroom</a></li>
+                        <li><a href="Contact-Us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Address -->
+                <div class="footer-col address-col">
+                    <h4 class="footer-heading">Address</h4>
+                    <p class="footer-address">
+                        808, 8F, Qiancheng Commercial Center,<br>
+                        5 Haicheng Road, Bao'an District,<br>
+                        Shenzhen 518102, China
+                    </p>
+                    <a href="Contact-Us.html" class="btn-red footer-quote-btn">Get a Quote</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    &copy; 2026 Pretech. All rights reserved.
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
