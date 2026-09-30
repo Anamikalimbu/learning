@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Solutions - Pretech Clone</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar-header" id="navbarHeader">
+        <div class="navbar">
+            <a class="navbar-logo" href="index.html">
+                <div class="logo-text">
+                    pretech
+                    <span class="logo-e-dot"></span>
+                </div>
+                <div class="logo-tagline">SMART DEVICE SOLUTIONS</div>
+            </a>
+            <button aria-expanded="false" class="navbar-toggle" id="navbarToggle">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <div class="navbar-collapse" id="navbarCollapse">
+                <div class="navbar-center">
+                    <ul class="navbar-links">
+                        <li><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="solutions.html">Solutions</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="solutions.html">All Solutions</a></li>
+                                <li><a href="#">Interactive IoT Solutions</a></li>
+                                <li><a href="#">POS Solutions</a></li>
+                                <li><a href="#">Car Infotainment Solutions</a></li>
+                                <li><a href="#">Smart Education</a></li>
+                                <li><a href="#">Healthcare Solutions</a></li>
+                                <li><a href="#">HMI Solutions</a></li>
+                                <li><a href="#">Multimedia Player</a></li>
+                                <li><a href="#">Enterprise Solutions</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="nav-link" href="#">OEM Products</a></li>
+                        <li><a class="nav-link" href="#">Support</a></li>
+                        <li><a class="nav-link" href="About-Us.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-right">
+                    <div class="search-container flex gap-8px margin-right-16px">
+                        <input class="padding-6px12px border-radius-4px border-1pxsolidccc" id="searchInput" placeholder="Search..." type="text">
+                        <button class="padding-6px12px border-radius-4px background-333 text-white border-none cursor-pointer" id="searchBtn">Go</button>
+                    </div>
+                    <a class="contact-btn" href="Contact-Us.html">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="solutions-hero">
+            <div class="solutions-hero-container">
+                <div class="solutions-hero-left">
+                    <div class="os-badges">
+                        <div class="os-badge badge-android">
+                            <span class="os-name">Android</span>
+                            <span class="os-icon">🤖</span>
+                        </div>
+                        <div class="os-badge badge-windows">
+                            <span class="os-name">Windows</span>
+                            <span class="os-icon">🪟</span>
+                        </div>
+                        <div class="os-badge badge-linux">
+                            <span class="os-name">Linux</span>
+                            <span class="os-icon">🐧</span>
+                        </div>
+                    </div>
+                    <h2 class="solutions-hero-subtitle">TurnkeySolution Provider</h2>
+                    <h1 class="solutions-hero-title">AIOT SMART DISPLAY</h1>
+                </div>
+
+                <div class="solutions-hero-right">
+                    <div class="solutions-bento">
+                        <div class="bento-card bento-pos">
+                            <h3>Smart<br>POS</h3>
+                        </div>
+                        <div class="bento-card bento-embedded">
+                            <h3>Open Frame<br>Embedded</h3>
+                        </div>
+                        <div class="bento-card bento-iot">
+                            <h3>Smart<br>IoT</h3>
+                            <div class="bento-bg-text">IoT</div>
+                            <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=300&q=80" alt="Tablet" class="bento-tablet">
+                        </div>
+                        <div class="bento-card bento-education">
+                            <h3>Smart<br>Education</h3>
+                        </div>
+                        <div class="bento-card bento-healthcare">
+                            <h3>Smart<br>Healthcare</h3>
+                            <div class="bento-bg-text">H</div>
+                        </div>
+                        <div class="bento-card bento-car">
+                            <h3>Car Infotainment</h3>
+                            <div class="bento-bg-text">C</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solutions Overview Section -->
+        <section class="solutions-overview-section">
+            <div class="solutions-overview-container">
+                <h2 class="solutions-overview-title">Custom Smart Devices Solutions Overview</h2>
+                <p class="solutions-overview-desc">
+                    Pretech has rich and successful experience in handling large ODM and OEM custom projects. Recently, we have developed a touchable device which has a broad range of industrial applications, such us smart home control station, OBD diagnostic equipment for cars, health care devices for hospitals, display for AI products, as well as education tablet PCs for students, and other ODM projects too numerous to list
+                </p>
+            </div>
+        </section>
+
+        <!-- Related Solutions Projects Section -->
+        <section class="related-projects-section">
+            <div class="related-projects-container">
+                <div class="related-projects-header">
+                    <h2>Related Solutions Project</h2>
+                    <p>Maybe you are interested in the following projects</p>
+                </div>
+
+                <div class="related-projects-grid">
+                    <!-- Project Card 1 -->
+                    <div class="project-card">
+                        <div class="project-card-image">
+                            <!-- Placeholder image replicating the POE design -->
+                            <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=800&q=80" alt="POE Wall-mounted Tablet Solutions">
+                        </div>
+                        <div class="project-card-content">
+                            <h3>Interactive IoT Solutions</h3>
+                            <p>Explore Pretech custom PoE Android tablets and wall-mounted control panels with RS485, NFC and multiple wall-box options for smart buildings, hotels and commercial automation.</p>
+                            <div class="project-card-footer">
+                                <span class="project-model">Model:</span>
+                                <a href="#" class="btn-learn-more">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="project-card">
+                        <div class="project-card-image">
+                            <!-- Placeholder image replicating the NFC design -->
+                            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80" alt="NFC POS Solutions">
+                        </div>
+                        <div class="project-card-content">
+                            <h3>POS Solutions</h3>
+                            <p>Discover Pretech's custom POS solutions for the payment industry, featuring handheld ordering devices and desktop NFC payment terminals. With stylus input and NFC capabilities, enhance transaction efficiency and improve user experience.</p>
+                            <div class="project-card-footer">
+                                <span class="project-model">Model:</span>
+                                <a href="#" class="btn-learn-more">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 3 -->
+                    <div class="project-card">
+                        <div class="project-card-image">
+                            <!-- Placeholder image for Car Infotainment -->
+                            <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=800&q=80" alt="Car Infotainment Solutions">
+                        </div>
+                        <div class="project-card-content">
+                            <h3>Car Infotainment Solutions</h3>
+                            <p>Pretech provides advanced car infotainment solutions, including OBD Tablet PCs for repair shops, Smart Android Dongles to upgrade in-dash displays, and 4G Android tablets for rear-seat entertainment. Improve fleet management and enhance in-car experiences.</p>
+                            <div class="project-card-footer">
+                                <span class="project-model">Model:</span>
+                                <a href="#" class="btn-learn-more">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 4 -->
+                    <div class="project-card">
+                        <div class="project-card-image">
+                            <!-- Placeholder image for Smart Education -->
+                            <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=800&q=80" alt="Smart Education Solutions">
+                        </div>
+                        <div class="project-card-content">
+                            <h3>Smart Education</h3>
+                            <p>Discover Pretech's ODM tablet solutions for the education sector, featuring MDM centralized management, centralized charging, stylus support, and protective case options. Designed for efficient classroom management and enhanced student engagement.</p>
+                            <div class="project-card-footer">
+                                <span class="project-model">Model:</span>
+                                <a href="#" class="btn-learn-more">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 5 -->
+                    <div class="project-card">
+                        <div class="project-card-image">
+                            <!-- Placeholder image for Healthcare -->
+                            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&q=80" alt="Healthcare Solutions">
+                        </div>
+                        <div class="project-card-content">
+                            <h3>Healthcare Solutions</h3>
+                            <p>Pretech offers customizable medical-grade tablets for healthcare, including elderly care, child care, and telemedicine. With antimicrobial coatings, secure data management, and seamless system integration, they are available in multiple sizes to meet diverse needs.</p>
+                            <div class="project-card-footer">
+                                <span class="project-model">Model:</span>
+                                <a href="#" class="btn-learn-more">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 6 -->
+                    <div class="project-card">
+                        <div class="project-card-image">
+                            <!-- Placeholder image for HMI -->
+                            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80" alt="HMI Solutions">
+                        </div>
+                        <div class="project-card-content">
+                            <h3>HMI Solutions</h3>
+                            <p>Pretech offers ODM tablet PCs customized for HMI applications, featuring battery-removed design, no camera, and robust serial communication support, tailored for seamless integration with industrial embedded systems.</p>
+                            <div class="project-card-footer">
+                                <span class="project-model">Model:</span>
+                                <a href="#" class="btn-learn-more">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <div class="footer-logo">pretech<span class="logo-dot">.</span></div>
+                    <p class="footer-desc">Leading OEM/ODM manufacturer of customizable smart tablet and panel solutions for global industries.</p>
+                    <div class="footer-contact">
+                        <p>📧 support@pretech-e.com</p>
+                        <p>📱 WhatsApp: +86 131 2955 8030</p>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Solutions</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Interactive IoT Solutions</a></li>
+                        <li><a href="#">POS Solutions</a></li>
+                        <li><a href="#">Car Infotainment</a></li>
+                        <li><a href="#">Smart Education</a></li>
+                        <li><a href="#">Healthcare Solutions</a></li>
+                        <li><a href="#">HMI Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="About-Us.html">About Pretech</a></li>
+                        <li><a href="#">Why Choose Us</a></li>
+                        <li><a href="#">Our Factory</a></li>
+                        <li><a href="#">Newsroom</a></li>
+                        <li><a href="Contact-Us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col address-col">
+                    <h4 class="footer-heading">Address</h4>
+                    <p class="footer-address">
+                        808, 8F, Qiancheng Commercial Center,<br>
+                        5 Haicheng Road, Bao'an District,<br>
+                        Shenzhen 518102, China
+                    </p>
+                    <a href="Contact-Us.html" class="btn-red footer-quote-btn">Get a Quote</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copyright">&copy; 2026 Pretech. All rights reserved.</div>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
