@@ -1,27 +1,176 @@
-* { box-sizing: border-box; }
-body { margin: 0; font-family: system-ui, sans-serif; background: #f3f5f9; color: #1c2430; }
-.container { max-width: 720px; margin: 0 auto; padding: 24px 16px 64px; display: grid; gap: 16px; }
-h1 { margin: 0; }
-.card { background: #fff; border-radius: 10px; padding: 16px; border: 1px solid #e1e6ee; }
-.form, .item { display: grid; gap: 10px; }
-.form h2, .item h3 { margin: 0; }
-.row { display: flex; gap: 10px; }
-.row > * { flex: 1; }
-input, select, textarea { padding: 10px; border: 1px solid #c9d1de; border-radius: 8px; font: inherit; width: 100%; }
-button { padding: 10px 14px; border: 0; border-radius: 8px; background: #1f4fd8; color: #fff; font: inherit; cursor: pointer; }
-button.danger { background: #c0392b; flex: 0 0 auto; }
-button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 2px solid #1f4fd8; outline-offset: 2px; }
-.error { color: #c0392b; margin: 0; }
-.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
-.stats .card { display: grid; text-align: center; padding: 12px; }
-.stats strong { font-size: 1.5rem; }
-.stats span { font-size: .8rem; color: #5b6676; }
-.list { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
-.item-head { display: flex; justify-content: space-between; gap: 10px; align-items: start; }
-.meta { margin: 0; color: #5b6676; font-size: .85rem; }
-.badge { padding: 3px 10px; border-radius: 999px; font-size: .75rem; white-space: nowrap; }
-.pending { background: #fff1d6; color: #8a5a00; }
-.in-progress { background: #dbe8ff; color: #1b46a8; }
-.resolved { background: #d9f5e3; color: #17683a; }
-.empty { text-align: center; color: #5b6676; }
-@media (max-width: 520px) { .stats { grid-template-columns: repeat(2, 1fr); } .row { flex-direction: column; } }
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background: #f3f5f9;
+    color: #1c2430;
+}
+
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 24px 16px 64px;
+    display: grid;
+    gap: 16px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 16px;
+    border: 1px solid #e1e6ee;
+}
+
+.form,
+.item {
+    display: grid;
+    gap: 10px;
+}
+
+.form h2,
+.item h3 {
+    margin: 0;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.row>* {
+    flex: 1;
+}
+
+input,
+select,
+textarea {
+    padding: 10px;
+    border: 1px solid #c9d1de;
+    border-radius: 8px;
+    font: inherit;
+    width: 100%;
+}
+
+button {
+    padding: 10px 14px;
+    border: 0;
+    border-radius: 8px;
+    background: #1f4fd8;
+    color: #fff;
+    font: inherit;
+    cursor: pointer;
+}
+
+button.danger {
+    background: #c0392b;
+    flex: 0 0 auto;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid #1f4fd8;
+    outline-offset: 2px;
+}
+
+.error {
+    color: #c0392b;
+    margin: 0;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.stats .card {
+    display: grid;
+    text-align: center;
+    padding: 12px;
+}
+
+.stats strong {
+    font-size: 1.5rem;
+}
+
+.stats span {
+    font-size: .8rem;
+    color: #5b6676;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 12px;
+}
+
+.item-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: start;
+}
+
+.meta {
+    margin: 0;
+    color: #5b6676;
+    font-size: .85rem;
+}
+
+.badge {
+    padding: 3px 10px;
+    border-radius: 999px;
+    font-size: .75rem;
+    white-space: nowrap;
+}
+
+.pending {
+    background: #fff1d6;
+    color: #8a5a00;
+}
+
+.in-progress {
+    background: #dbe8ff;
+    color: #1b46a8;
+}
+
+.resolved {
+    background: #d9f5e3;
+    color: #17683a;
+}
+
+.empty {
+    text-align: center;
+    color: #5b6676;
+}
+
+@media (max-width: 520px) {
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .row {
+        flex-direction: column;
+    }
+}
+
+button.secondary {
+    background: #5b6676;
+    flex: 0 0 auto;
+}
+
+.edit-actions {
+    display: flex;
+    gap: 10px;
+}
