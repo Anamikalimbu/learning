@@ -17,6 +17,10 @@ export function complaintsReducer(state, action) {
       return state.map((c) =>
         c.id === action.id ? { ...c, status: action.status } : c
       );
+    case "EDIT":
+      return state.map((c) =>
+        c.id === action.id ? { ...c, ...action.changes } : c
+      );
     case "DELETE":
       return state.filter((c) => c.id !== action.id);
     default:
