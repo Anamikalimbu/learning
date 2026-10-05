@@ -40,6 +40,7 @@ export default function App() {
               key={c.id}
               complaint={c}
               onStatusChange={(id, s) => dispatch({ type: "UPDATE_STATUS", id, status: s })}
+              onEdit={(id, changes) => dispatch({ type: "EDIT", id, changes })}
               onDelete={(id) => dispatch({ type: "DELETE", id })}
             />
           ))}
