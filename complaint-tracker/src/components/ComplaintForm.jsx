@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { CATEGORIES } from "../reducer";
+import { CATEGORIES, PRIORITIES } from "../reducer";
 
-const empty = { title: "", category: CATEGORIES[0], ward: "", description: "" };
+const empty = { title: "", category: CATEGORIES[0], priority: "Medium", ward: "", description: "" };
 
 export default function ComplaintForm({ onSubmit }) {
   const [form, setForm] = useState(empty);
@@ -32,6 +32,9 @@ export default function ComplaintForm({ onSubmit }) {
       <div className="row">
         <select name="category" value={form.category} onChange={handleChange}>
           {CATEGORIES.map((c) => <option key={c}>{c}</option>)}
+        </select>
+        <select name="priority" value={form.priority} onChange={handleChange} aria-label="Priority">
+          {PRIORITIES.map((p) => <option key={p}>{p}</option>)}
         </select>
         <input name="ward" placeholder="Ward no." value={form.ward} onChange={handleChange} />
       </div>
