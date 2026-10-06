@@ -1,4 +1,5 @@
 export const STATUSES = ["Pending", "In Progress", "Resolved"];
+export const PRIORITIES = ["Low", "Medium", "High"];
 export const CATEGORIES = ["Road", "Water", "Electricity", "Waste", "Other"];
 
 export function complaintsReducer(state, action) {
