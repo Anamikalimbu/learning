@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mood Journal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=DM+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body class="theme-purple">
+    <a class="back-link" href="../index.html">All apps</a>
+    <h1>Mood Journal</h1>
+    <p class="lede">One entry a day is enough to see how things are going.</p>
+
+    <form id="entry-form">
+      <div class="row">
+        <label
+          >Date
+          <input id="date" type="date" required />
+        </label>
+        <label
+          >Mood
+          <select id="mood">
+            <option value="1">1 - Very low</option>
+            <option value="2">2 - Low</option>
+            <option value="3" selected>3 - Okay</option>
+            <option value="4">4 - Good</option>
+            <option value="5">5 - Great</option>
+          </select>
+        </label>
+      </div>
+      <label
+        >Note (optional)
+        <textarea id="note" rows="3"></textarea>
+      </label>
+      <button id="save-button" class="primary" type="submit">Add entry</button>
+      <button id="cancel-button" type="button" hidden>Cancel</button>
+    </form>
+
+    <div class="filters" id="filters">
+      <button type="button" data-filter="all">All</button>
+      <button type="button" data-filter="good">Good</button>
+      <button type="button" data-filter="neutral">Neutral</button>
+      <button type="button" data-filter="low">Low</button>
+    </div>
+
+    <div id="entry-list"></div>
+
+    <script src="../shared.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
