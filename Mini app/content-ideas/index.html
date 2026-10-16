@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Content Ideas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=DM+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body class="theme-orange">
+    <a class="back-link" href="../index.html">All apps</a>
+    <h1>Content Ideas</h1>
+    <p class="lede">
+      Capture ideas as they come and move them from draft to published.
+    </p>
+
+    <form id="idea-form">
+      <label
+        >Idea
+        <input id="title" type="text" required />
+      </label>
+      <div class="row">
+        <label
+          >Type
+          <select id="type">
+            <option>Video</option>
+            <option>Blog</option>
+            <option>Post</option>
+          </select>
+        </label>
+        <label
+          >Status
+          <select id="status">
+            <option>Draft</option>
+            <option>Published</option>
+            <option>Archived</option>
+          </select>
+        </label>
+      </div>
+      <button id="save-button" class="primary" type="submit">Add idea</button>
+      <button id="cancel-button" type="button" hidden>Cancel</button>
+    </form>
+
+    <div class="row filters">
+      <label
+        >Filter by type
+        <select id="type-filter">
+          <option value="all">All types</option>
+          <option>Video</option>
+          <option>Blog</option>
+          <option>Post</option>
+        </select>
+      </label>
+      <label
+        >Filter by status
+        <select id="status-filter">
+          <option value="all">All statuses</option>
+          <option>Draft</option>
+          <option>Published</option>
+          <option>Archived</option>
+        </select>
+      </label>
+    </div>
+
+    <div id="idea-list"></div>
+
+    <script src="../shared.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
