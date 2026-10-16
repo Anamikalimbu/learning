@@ -1,0 +1,241 @@
+@property --orb-light {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #7ee8d8;
+}
+@property --orb-deep {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #0f8f84;
+}
+@property --halo {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: rgba(20, 184, 166, 0.5);
+}
+
+.circle-area {
+  display: grid;
+  place-items: center;
+  height: 390px;
+  margin: 0 0 4px;
+}
+
+.circle {
+  --orb-light: #7ee8d8;
+  --orb-deep: #0f8f84;
+  --halo: rgba(20, 184, 166, 0.5);
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 34% 28%,
+    var(--orb-light),
+    var(--orb-deep) 72%
+  );
+  box-shadow:
+    0 0 40px var(--halo),
+    inset 0 -10px 22px rgba(0, 0, 0, 0.16),
+    inset 0 6px 14px rgba(255, 255, 255, 0.3);
+  transition:
+    --orb-light 0.8s,
+    --orb-deep 0.8s,
+    --halo 0.8s;
+  animation: idle 4s ease-in-out infinite;
+}
+
+.circle::before,
+.circle::after {
+  content: "";
+  position: absolute;
+  border: 2px solid var(--halo);
+  border-radius: 50%;
+  transition: border-color 0.8s;
+}
+.circle::after {
+  inset: -16px;
+}
+.circle::before {
+  inset: -36px;
+  border-width: 1px;
+  opacity: 0.55;
+}
+
+.circle.inhale {
+  --orb-light: #7ee8d8;
+  --orb-deep: #0f8f84;
+  --halo: rgba(20, 184, 166, 0.55);
+  animation: grow 4s ease-in-out forwards;
+}
+
+.circle.hold {
+  --orb-light: #a5b4fc;
+  --orb-deep: #4f46e5;
+  --halo: rgba(99, 102, 241, 0.6);
+  transform: scale(1.9);
+  animation: hold-glow 4s ease-in-out forwards;
+}
+
+.circle.exhale {
+  --orb-light: #8fdcff;
+  --orb-deep: #0b7fc0;
+  --halo: rgba(56, 189, 248, 0.55);
+  animation: shrink 4s ease-in-out forwards;
+}
+
+.circle.paused {
+  animation-play-state: paused;
+}
+
+@keyframes idle {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes grow {
+  from {
+    transform: scale(1);
+    box-shadow:
+      0 0 25px var(--halo),
+      inset 0 -10px 22px rgba(0, 0, 0, 0.16),
+      inset 0 6px 14px rgba(255, 255, 255, 0.3);
+  }
+  to {
+    transform: scale(1.9);
+    box-shadow:
+      0 0 70px var(--halo),
+      inset 0 -10px 22px rgba(0, 0, 0, 0.16),
+      inset 0 6px 14px rgba(255, 255, 255, 0.3);
+  }
+}
+
+@keyframes hold-glow {
+  0%,
+  100% {
+    box-shadow:
+      0 0 60px var(--halo),
+      inset 0 -10px 22px rgba(0, 0, 0, 0.16),
+      inset 0 6px 14px rgba(255, 255, 255, 0.3);
+  }
+  50% {
+    box-shadow:
+      0 0 90px var(--halo),
+      inset 0 -10px 22px rgba(0, 0, 0, 0.16),
+      inset 0 6px 14px rgba(255, 255, 255, 0.3);
+  }
+}
+
+@keyframes shrink {
+  from {
+    transform: scale(1.9);
+    box-shadow:
+      0 0 70px var(--halo),
+      inset 0 -10px 22px rgba(0, 0, 0, 0.16),
+      inset 0 6px 14px rgba(255, 255, 255, 0.3);
+  }
+  to {
+    transform: scale(1);
+    box-shadow:
+      0 0 25px var(--halo),
+      inset 0 -10px 22px rgba(0, 0, 0, 0.16),
+      inset 0 6px 14px rgba(255, 255, 255, 0.3);
+  }
+}
+
+.phase-text,
+.guide-text,
+.seconds-text,
+.cycle-text,
+.controls,
+.hint {
+  text-align: center;
+}
+
+.phase-text {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--main-ink);
+}
+
+.guide-text {
+  margin: 2px 0 6px;
+  min-height: 1.6em;
+  color: var(--muted);
+}
+
+.seconds-text {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 4.2rem;
+  font-weight: 600;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+.seconds-text.tick {
+  animation: tick 0.4s var(--ease-spring);
+}
+
+@keyframes tick {
+  from {
+    transform: scale(1.18);
+    opacity: 0.5;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.cycle-text {
+  margin: 0 0 20px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.hint {
+  margin-top: 16px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.controls button {
+  min-width: 120px;
+  margin: 0 6px;
+  padding: 12px 24px;
+  font-size: 1.02rem;
+  border-radius: 14px;
+}
+
+@media (max-width: 480px) {
+  .circle-area {
+    height: 350px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .circle,
+  .circle.inhale,
+  .circle.hold,
+  .circle.exhale {
+    animation: none;
+    transition: none;
+  }
+  .circle.inhale,
+  .circle.hold {
+    transform: scale(1.9);
+  }
+  .circle.exhale {
+    transform: scale(1);
+  }
+  .seconds-text.tick {
+    animation: none;
+  }
+}
