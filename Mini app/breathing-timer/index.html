@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Breathing Timer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=DM+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="theme-teal">
+    <a class="back-link" href="../index.html">All apps</a>
+    <h1>Breathing Timer</h1>
+    <p class="lede">Set your pace, press Start, and follow the circle.</p>
+
+    <div class="settings">
+      <div class="row">
+        <label
+          >Inhale (seconds)
+          <input id="inhale-input" type="number" min="1" max="30" value="4" />
+        </label>
+        <label
+          >Hold (seconds)
+          <input id="hold-input" type="number" min="1" max="30" value="4" />
+        </label>
+        <label
+          >Exhale (seconds)
+          <input id="exhale-input" type="number" min="1" max="30" value="4" />
+        </label>
+      </div>
+    </div>
+
+    <div class="circle-area">
+      <div id="circle" class="circle"></div>
+    </div>
+
+    <p id="phase-text" class="phase-text" aria-live="polite">Ready</p>
+    <p id="guide-text" class="guide-text">Set your pace, then press Start.</p>
+    <p id="seconds-text" class="seconds-text">4</p>
+    <p id="cycle-text" class="cycle-text">Completed cycles: 0</p>
+
+    <div class="controls">
+      <button id="start-button" class="primary" type="button">Start</button>
+      <button id="reset-button" type="button">Reset</button>
+    </div>
+    <p class="hint">Press Space to start or pause.</p>
+
+    <script src="../shared.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
